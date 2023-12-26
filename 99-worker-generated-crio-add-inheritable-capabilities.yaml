@@ -1,13 +1,9 @@
 apiVersion: machineconfiguration.openshift.io/v1
 kind: MachineConfig
 metadata:
-  creationTimestamp: "2023-09-18T05:07:35Z"
-  generation: 1
   labels:
     machineconfiguration.openshift.io/role: worker
   name: 99-worker-generated-crio-add-inheritable-capabilities
-  resourceVersion: "7082"
-  uid: 3ade4bc8-5f40-4d32-b819-865bbf7427df
 spec:
   config:
     ignition:

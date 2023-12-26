@@ -1,13 +1,9 @@
 apiVersion: machineconfiguration.openshift.io/v1
 kind: MachineConfig
 metadata:
-  creationTimestamp: "2023-09-18T04:58:42Z"
-  generation: 1
   labels:
     machineconfiguration.openshift.io/role: master
   name: 99-master-ssh
-  resourceVersion: "1586"
-  uid: dc22a4e9-05f2-4f91-873b-e19ea5e7d643
 spec:
   config:
     ignition:

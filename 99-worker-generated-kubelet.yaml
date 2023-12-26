@@ -1,22 +1,9 @@
 apiVersion: machineconfiguration.openshift.io/v1
 kind: MachineConfig
 metadata:
-  annotations:
-    machineconfiguration.openshift.io/generated-by-controller-version: 05dd21653075fa389e62d64eba191a502c4ffd66
-  creationTimestamp: "2023-11-15T02:27:49Z"
-  generation: 2
   labels:
     machineconfiguration.openshift.io/role: worker
   name: 99-worker-generated-kubelet
-  ownerReferences:
-  - apiVersion: machineconfiguration.openshift.io/v1
-    blockOwnerDeletion: true
-    controller: true
-    kind: KubeletConfig
-    name: set-max-pods
-    uid: 40dfa80f-efae-4291-904c-52e59599dd2f
-  resourceVersion: "66524680"
-  uid: 8faea160-1b3b-438d-862e-4aa3fda79b56
 spec:
   baseOSExtensionsContainerImage: ""
   config:

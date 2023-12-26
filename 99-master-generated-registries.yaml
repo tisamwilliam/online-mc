@@ -1,20 +1,9 @@
 apiVersion: machineconfiguration.openshift.io/v1
 kind: MachineConfig
 metadata:
-  annotations:
-    machineconfiguration.openshift.io/generated-by-controller-version: 05dd21653075fa389e62d64eba191a502c4ffd66
-  creationTimestamp: "2023-09-18T05:07:36Z"
-  generation: 2
   labels:
     machineconfiguration.openshift.io/role: master
   name: 99-master-generated-registries
-  ownerReferences:
-  - apiVersion: config.openshift.io/v1
-    kind: Image
-    name: cluster
-    uid: 158143ab-8fb1-40f3-9859-a60fc84ad28b
-  resourceVersion: "34660499"
-  uid: 8e49b954-c998-41f0-87bb-d6ee96cababb
 spec:
   baseOSExtensionsContainerImage: ""
   config:

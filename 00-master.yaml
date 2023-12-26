@@ -1,22 +1,9 @@
 apiVersion: machineconfiguration.openshift.io/v1
 kind: MachineConfig
 metadata:
-  annotations:
-    machineconfiguration.openshift.io/generated-by-controller-version: 05dd21653075fa389e62d64eba191a502c4ffd66
-  creationTimestamp: "2023-09-18T05:07:36Z"
-  generation: 4
   labels:
     machineconfiguration.openshift.io/role: master
   name: 00-master
-  ownerReferences:
-  - apiVersion: machineconfiguration.openshift.io/v1
-    blockOwnerDeletion: true
-    controller: true
-    kind: ControllerConfig
-    name: machine-config-controller
-    uid: c4248994-effd-4e44-bf03-d5aaf8524b4f
-  resourceVersion: "34660500"
-  uid: c383a62e-4ccf-48af-a11c-8a25ff72e77a
 spec:
   baseOSExtensionsContainerImage: ""
   config:
