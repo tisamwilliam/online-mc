@@ -1,0 +1,25 @@
+apiVersion: machineconfiguration.openshift.io/v1
+kind: MachineConfig
+metadata:
+  creationTimestamp: "2023-09-18T04:58:43Z"
+  generation: 1
+  labels:
+    machineconfiguration.openshift.io/role: worker
+  name: 99-worker-ssh
+  resourceVersion: "1587"
+  uid: 5269b56b-c3a6-4844-9746-f017a8ead963
+spec:
+  config:
+    ignition:
+      version: 3.2.0
+    passwd:
+      users:
+      - name: core
+        sshAuthorizedKeys:
+        - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQClzRta6sprq9Bpd9W99w5c0d2AlnjsSQVqrCy14SeQ5uIymRDJV4v0TDLrunmZaR8s47aOcpHmXs9ejvwolj29VrSdcIJ5XDAHKNgPyCqInrFIqCybI9T3j6e64AHGJEHL/ojFQQDGUTP2dFOwoqbdDQW6rloHAW9oyxiZsMDbH4fA+4MUwe09x5I6I5CasRAOv6OudKMbjTeyZ+KM+SdzNhNRsq7urvrsA4wOSXf0hQfJcutl3DsRKzGctz5ZNzM6efuDHgx0J+nWqAAl50pMq27HeqAyUnajWbXZhsQzuBUZasLS0spYeeHyaWviU098QWxjB0Iinlzha8gzv6WFpyicq50qutaZdVRMXQETlm2VkvUJfdslzmqM0rTl1ICrbKBpoyxkbFDFbTkUs6zoQjGSB0nax1CCT5LbQmX9594IKnQJjk385ACcu0SWkxzqG/V+gIkNNcfMtEGfb+wYNCoTiA/KCMqhfnvDkObh4KCjeIvs+bisQSqtHLaDLQk=
+          root@bastion.ocp.olg.online.com
+  extensions: null
+  fips: false
+  kernelArguments: null
+  kernelType: ""
+  osImageURL: ""

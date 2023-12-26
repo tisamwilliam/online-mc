@@ -1,0 +1,27 @@
+apiVersion: machineconfiguration.openshift.io/v1
+kind: MachineConfig
+metadata:
+  creationTimestamp: "2023-09-18T05:07:35Z"
+  generation: 1
+  labels:
+    machineconfiguration.openshift.io/role: master
+  name: 99-master-generated-crio-add-inheritable-capabilities
+  resourceVersion: "7081"
+  uid: 799a0c7c-91bf-4a5a-aedd-34132121c54b
+spec:
+  config:
+    ignition:
+      version: 3.2.0
+    storage:
+      files:
+      - contents:
+          compression: ""
+          source: data:text/plain;charset=utf-8;base64,W2NyaW9dCiAgW2NyaW8ucnVudGltZV0KICAgIGFkZF9pbmhlcml0YWJsZV9jYXBhYmlsaXRpZXMgPSB0cnVlCg==
+        mode: 420
+        overwrite: true
+        path: /etc/crio/crio.conf.d/01-mc-addInheritableCapabilities
+  extensions: null
+  fips: false
+  kernelArguments: null
+  kernelType: ""
+  osImageURL: ""

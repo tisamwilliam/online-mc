@@ -1,0 +1,23 @@
+apiVersion: machineconfiguration.openshift.io/v1
+kind: MachineConfig
+metadata:
+  creationTimestamp: "2023-11-17T06:34:56Z"
+  generation: 2
+  labels:
+    machineconfiguration.openshift.io/role: worker
+  name: 99-worker-kubelet-loglevel
+  resourceVersion: "78720355"
+  uid: 6d1d6b74-9451-4ec1-bd8e-fac86f1d6963
+spec:
+  config:
+    ignition:
+      version: 3.2.0
+    systemd:
+      units:
+      - dropins:
+        - contents: |
+            [Service]
+            Environment="KUBELET_LOG_LEVEL=1"
+          name: 30-logging.conf
+        enabled: true
+        name: kubelet.service
